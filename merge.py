@@ -11,4 +11,4 @@ for i in dfs:
 result : pd.DataFrame = pd.concat(dfs)
 result.reset_index(inplace=True)
 
-result.to_csv(os.path.join(CSV_PATH, 'feature.csv'))
+result.to_csv('feature.csv', index = False)
